@@ -1,0 +1,13 @@
+# Test macro with more verbose output for debugging
+/run/initialize
+
+# Set random seed for reproducibility
+/random/setSeeds 123456 654321
+
+# Print progress every event
+/run/printProgress 1
+
+# Run only 10 events for testing
+/run/beamOn 10
+
+echo "Test run completed - check for scattering debug messages"
